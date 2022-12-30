@@ -9,5 +9,88 @@
     <script defer src="./js/index.js"></script>
     <title>HTML-form</title>
   </head>
-  <body></body>
+  <body>
+    <div class="mainform">
+      <div class="about">
+        <h2>Contact form</h2>
+        <p>Please fill in your information and we'll be sending your order.</p>
+      </div>
+      <form method="post">
+        <label>
+          <span>Your name</span>
+          <input
+            class="userName"
+            type="text"
+            name="first-name"
+            placeholder="first name"
+            required
+            tabindex="1"
+            autofocus
+          />
+          <input
+            class="userLastName"
+            type="text"
+            name="last-name"
+            placeholder="last name"
+            tabindex="2"
+            required
+          />
+        </label>
+        <label>
+          <span>Your email</span>
+          <input
+            class="userEmail"
+            type="email"
+            name="email"
+            placeholder="your_mail@mail.com"
+            tabindex="3"
+          />
+        </label>
+        <label>
+          <span>Phone *</span>
+          <input
+            class="userTel"
+            type="tel"
+            name="tel-number-code"
+            autocomplete
+            placeholder="000"
+            tabindex="4"
+            required
+          />
+          <input
+            class="userTel"
+            type="tel"
+            name="tel-number-f-part"
+            autocomplete
+            placeholder="000"
+            tabindex="5"
+            required
+          />
+          <input
+            class="userTelMain"
+            type="tel"
+            name="tel-number-s-part"
+            autocomplete
+            placeholder="0000"
+            tabindex="6"
+            required
+          />
+        </label>
+        <label>
+          <span>Message subject *</span>
+          <select name="msg-subject" tabindex="7" required>
+            <option value="value-other" selected>Other</option>
+            <option value="value-return">Warranty return</option>
+            <option value="value-site-supp">Site support</option>
+          </select>
+        </label>
+        <label>
+          <span>Message *</span>
+          <textarea name="user-message" tabindex="8" required></textarea>
+        </label>
+        <hr />
+        <button type="submit">SUBMIT FORM</button>
+      </form>
+    </div>
+  </body>
 </html>
