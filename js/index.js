@@ -24,7 +24,7 @@ function inputHandler(e) {
 }
 
 const TEXTAREA_REG_EXP = {
-  "user-message": /^([A-Za-z0-9-]+){15,100}?$/,
+  "user-message": /^[A-Za-z0-9 ]{15,100}$/,
 };
 
 const textarea = document.querySelectorAll("textarea");
